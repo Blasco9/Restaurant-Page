@@ -9,14 +9,23 @@ container.appendChild(navbar());
 container.appendChild(home());
 container.appendChild(footer());
 
-document.querySelector('.nav-link.home').addEventListener('click', () => {
-  container.replaceChild(home(), document.querySelector('main'))
-});
+const changePage = (event) => {
+	const activeLink = document.querySelector('.active');
+	const clickedLink = event.target;
+	const page = clickedLink.classList[1];
+	const contentToReplace = document.querySelector('main');
+	let contentToShow = '';
 
-document.querySelector('.nav-link.menu').addEventListener('click', () => {
-  container.replaceChild(menu(), document.querySelector('main'))
-});
+	if (clickedLink !== activeLink) {
+		activeLink.classList.remove('active');
+		clickedLink.classList.add('active');
 
-document.querySelector('.nav-link.contact').addEventListener('click', () => {
-  container.replaceChild(contact(), document.querySelector('main'))
+		contentToShow = page === 'home' ? home() : page === 'menu' ? menu() : contact();
+
+		container.replaceChild(contentToShow, contentToReplace);
+	}
+};
+
+document.querySelectorAll('.nav-link').forEach((link) => {
+	link.addEventListener('click', changePage);
 });

@@ -1,7 +1,8 @@
 import dishImg from '../images/menu-img.png';
 
 const menu = () => {
-	const main = document.createElement('main');
+  const main = document.createElement('main');
+  main.id = 'menu'
 
 	const text = document.createElement('h1');
 	text.innerText = "Take a look at the best menu you'll ever find!";

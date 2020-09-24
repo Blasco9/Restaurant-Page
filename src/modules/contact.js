@@ -1,5 +1,6 @@
 const contact = () => {
-	const main = document.createElement('main');
+  const main = document.createElement('main');
+  main.id = 'contact'
 
 	const text = document.createElement('p');
 	text.innerHTML = `

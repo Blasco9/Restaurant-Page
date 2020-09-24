@@ -1,5 +1,6 @@
 const home = () => {
-	const main = document.createElement('main');
+  const main = document.createElement('main');
+  main.id = 'home'
 
 	const title = document.createElement('h1');
 	title.innerText = 'Restaurant Title';

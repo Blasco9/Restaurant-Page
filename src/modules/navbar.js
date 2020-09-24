@@ -2,7 +2,7 @@ const nav = () => {
   const navbar = document.createElement('nav')
 
   const homeLink = document.createElement('li')
-  homeLink.className = 'nav-link home'
+  homeLink.className = 'nav-link home active'
   homeLink.innerText = "HOME"
 
   const menuLink = document.createElement('li')
