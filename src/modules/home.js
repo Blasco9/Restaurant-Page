@@ -18,3 +18,5 @@ const home = () => {
 
 	return main;
 };
+
+export default home
