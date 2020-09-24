@@ -2,13 +2,16 @@ const nav = () => {
   const navbar = document.createElement('nav')
 
   const homeLink = document.createElement('li')
-  homeLink.innerHTML = "HOME"
+  homeLink.className = 'nav-link home'
+  homeLink.innerText = "HOME"
 
   const menuLink = document.createElement('li')
-  menuLink.innerHTML = "MENU"
+  menuLink.className = 'nav-link menu'
+  menuLink.innerText = "MENU"
 
   const contactLink = document.createElement('li')
-  contactLink.innerHTML = "CONTACT"
+  contactLink.className = 'nav-link contact'
+  contactLink.innerText = "CONTACT"
 
   navbar.appendChild(homeLink)
   navbar.appendChild(menuLink)

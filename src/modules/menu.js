@@ -1,6 +1,4 @@
-import navbar from './navbar';
-import footer from './footer';
-import dishImg from '..images/menu-img.png';
+import dishImg from '../images/menu-img.png';
 
 const menu = () => {
 	const main = document.createElement('main');
@@ -29,10 +27,8 @@ const menu = () => {
 		menu.appendChild(dish);
 	}
 
-	main.appendChild(navbar());
 	main.appendChild(text);
 	main.appendChild(menu);
-	main.appendChild(footer());
 
 	return main;
 };

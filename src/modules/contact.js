@@ -1,6 +1,3 @@
-import navbar from './navbar';
-import footer from './footer';
-
 const contact = () => {
 	const main = document.createElement('main');
 
@@ -9,10 +6,8 @@ const contact = () => {
     You can contact us through our phone number: 111-222-333<br>
     or send us an email to fakedirection@nonexistent.com
   `;
-
-	main.appendChild(navbar());
-	main.appendChild(text);
-	main.appendChild(footer());
+	
+	main.appendChild(text);	
 
 	return main;
 };
