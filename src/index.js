@@ -3,6 +3,7 @@ import footer from './modules/footer.js';
 import home from './modules/home.js';
 import menu from './modules/menu.js';
 import contact from './modules/contact.js';
+import './styles.css'
 
 const container = document.querySelector('#content');
 container.appendChild(navbar());
